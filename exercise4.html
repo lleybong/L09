@@ -31,15 +31,15 @@
             labels: labels,
             datasets: [{
                 label: 'My First Dataset',
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)', 'rgb(75, 192, 192)', 'rgb(153, 102, 255)', 'rgb(255, 159, 64)'],
+                borderColor: 'rgb(255, 255, 255)',
                 data: [5, 10, 5, 2, 20, 30],
             }]
         };
         // Configure chart
         const config = {
-            type: 'bar',
-            data: data
+            type: 'pie',
+            data: data,
         };
         // Render chart in <canvas>
         const myChart = new Chart(
